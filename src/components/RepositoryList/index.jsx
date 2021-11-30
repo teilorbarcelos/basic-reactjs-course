@@ -20,7 +20,7 @@ export function RepositoryList() {
         {
           repositories.length > 0 ?
 
-            repositories.map(repository => <RepositoryItem repository={repository} />)
+            repositories.map(repository => <RepositoryItem key={repository.id} repository={repository} />)
 
             :
 
